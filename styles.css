@@ -149,7 +149,7 @@ body, html, main {
     flex: none;
     overflow: visible;
     position: relative;
-    max-width: 80%;
+    max-width: 70%;
 }
 
 .received .tail {
@@ -179,7 +179,7 @@ body, html, main {
     margin-right: 0;
     margin-left: auto;
     position: relative;
-    max-width: 80%;
+    max-width: 70%;
 }
 
 .sent .tail {
