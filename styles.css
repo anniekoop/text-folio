@@ -1,11 +1,6 @@
 * {
     box-sizing: border-box;
-}
-
-@font-face {
-    font-family: "San Francisco";
-    font-weight: 400;
-    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+    font-family: 'SF Pro', 'Inter', 'Helvetica Neue', 'Roboto', sans-serif;
 }
 
 body, html, main {
