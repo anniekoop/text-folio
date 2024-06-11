@@ -135,7 +135,6 @@ function sendQuestion(questionObj) {
     }, 750);
 }
 
-
 function markQuestionAsSent(index) {
     sentQuestions.add(index);
 }
@@ -157,20 +156,19 @@ function displayLoadingMessage(callback) {
     loadingElipsis3.classList.add('elipsis');
 
     chatBody.appendChild(loadingMessage);
-
     chatBody.scrollTop = chatBody.scrollHeight;
 
     function animateEllipsis() {
+        loadingElipsis1.classList.add('elipsis-0');
         setTimeout(() => {
-            loadingElipsis1.classList.add('elipsis-0');
+            loadingElipsis1.classList.remove('elipsis-0');
+            loadingElipsis2.classList.add('elipsis-0');
             setTimeout(() => {
-                loadingElipsis1.classList.remove('elipsis-0');
-                loadingElipsis2.classList.add('elipsis-0');
+                loadingElipsis2.classList.remove('elipsis-0');
+                loadingElipsis3.classList.add('elipsis-0');
                 setTimeout(() => {
-                    loadingElipsis2.classList.remove('elipsis-0');
-                    loadingElipsis3.classList.add('elipsis-0');
+                    loadingElipsis3.classList.remove('elipsis-0');
                     setTimeout(() => {
-                        loadingElipsis3.classList.remove('elipsis-0');
                         chatBody.removeChild(loadingMessage);
                         callback();
                     }, 325);
@@ -181,7 +179,6 @@ function displayLoadingMessage(callback) {
 
     animateEllipsis();
 }
-
 
 function displayAnswer(questionIndex) {
     const chatBody = document.getElementById('chat-body');
