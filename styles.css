@@ -326,3 +326,9 @@ body, html, main {
 .text-link:hover {
     color: #007bff;
 }
+
+@media only screen and (max-height: 680px) {
+    #chat-body {
+        height: 60vh;
+    }
+}
