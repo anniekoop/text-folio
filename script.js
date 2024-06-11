@@ -38,7 +38,7 @@ const messages = [
     },
     {
         question: 'What programming languages are you familiar with?',
-        answer: "Since beginning my web development journey, I've learned HTML/CSS, JavaScript (including libraries like React and Bootstrap), and am currently learning Python and PHP."
+        answer: "Since beginning my web development journey, I've learned HTML/CSS (it counts!), JavaScript, and JS libraries including React and Bootstrap. I'm currently learning Python and PHP."
     },
     {
         question: 'How did you get into web design and development?',
@@ -63,15 +63,15 @@ const messages = [
                 img: 'https://framerusercontent.com/images/fDqZlBds8kbH9ZpDPMi0rpfVzNs.png'
             },
             {
-                title: 'Phoebe',
-                link: 'https://anniekoopdesign.com/case-studies/phoebe',
-                img: 'https://framerusercontent.com/images/fmY4jZOVFLNGxC9dzIe13l7SBo.webp'
+                title: 'Neumorphic App Icons',
+                link: 'https://www.figma.com/community/file/1338096514159389850/neumorphic-app-icons',
+                img: 'https://framerusercontent.com/images/PjBC4grMJ1xHoKlHJlJmllBEo.png'
             }
         ]
     },
     {
         question: 'Are you available for full-time or freelance work?',
-        answerHTML: "I'm not open to full-time or part-time positions right now, since I'm currently working at <span class='emphasis'><a class='text-link' href='https://wcf.com' target='_blank'>WCF Insurance</a></span> as a UX Design Intern. However, I'm happy to discuss freelance opportunities. Just send me a <span class='emphasis'><a class='text-link' href='mailto:anniebkoop@gmail.com'>message</a></span> and I'll be in touch! 🤗"
+        answerHTML: "I'm not open to full-time or part-time positions right now, since I'm currently working at <span class='emphasis'><a class='text-link' href='https://wcf.com' target='_blank'>WCF Insurance</a></span> as a UX Design Intern. However, I'm happy to discuss freelance opportunities. Just send me a <span class='emphasis'><a class='text-link' href='mailto:anniebkoop@gmail.com'>message</a></span> and I'll be in touch! 💟"
     },
     {
         question: 'Where can I view your other projects and designs?',
@@ -92,7 +92,7 @@ function loadInitialContent() {
 
 function loadFirstMessage() {
     const firstChat = document.createElement('div');
-    firstChat.innerHTML = "<div class='tail'></div><p class='message-text'>Hi! I'm Annie Koop, a product designer from Salt Lake City, Utah. I create accessible, engaging experiences that benefit brands and their users. It's nice to meet you! 😊</p>";
+    firstChat.innerHTML = "<div class='tail'></div><p class='message-text'>Hi! I'm Annie Koop, a product designer from Salt Lake City. I work to create seamless, engaging experiences that benefit brands and their users. It's nice to meet you! 👋</p>";
     firstChat.classList.add('received');
 
     const chatBody = document.getElementById('chat-body');
