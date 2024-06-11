@@ -202,7 +202,7 @@ function displayAnswer(questionIndex) {
         messages[questionIndex].projects.forEach(project => {
             const projectMessage = document.createElement('div');
             projectMessage.classList.add('received');
-            projectMessage.innerHTML = `<div class="tail"></div><a class="message-text text-link" href="${project.link}">${project.title}<span class="project-img-wrap"><img class="project-img" src="${project.img}"</span></a>`;
+            projectMessage.innerHTML = `<div class="tail"></div><a class="message-text text-link" href="${project.link}" target="_blank">${project.title}<span class="project-img-wrap"><img class="project-img" src="${project.img}"</span></a>`;
             chatBody.appendChild(projectMessage);
             chatBody.scrollTop = chatBody.scrollHeight;
         });
