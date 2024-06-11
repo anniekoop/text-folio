@@ -1,6 +1,10 @@
 * {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "San Francisco";
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
 body, html, main {
