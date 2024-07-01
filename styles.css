@@ -210,7 +210,7 @@ body, html, main {
     flex: none;
 }
 
-.elipsis {
+.ellipsis {
     width: 0.5rem;
     height: 0.5rem;
     background-color: #888;
@@ -219,8 +219,8 @@ body, html, main {
     transition: opacity 0.5s;
 }
 
-.elipsis-0 { opacity: 0.1; }
-.elipsis-1 { opacity: 1; }
+.ellipsis-0 { opacity: 0.1; }
+.ellipsis-1 { opacity: 1; }
 
 .link-preview {
     word-wrap: break-word;
