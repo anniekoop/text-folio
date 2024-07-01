@@ -142,32 +142,32 @@ function markQuestionAsSent(index) {
 function displayLoadingMessage(callback) {
     const chatBody = document.getElementById('chat-body');
     const loadingMessage = document.createElement('div');
-    const loadingElipsis1 = document.createElement('div');
-    const loadingElipsis2 = document.createElement('div');
-    const loadingElipsis3 = document.createElement('div');
+    const loadingEllipsis1 = document.createElement('div');
+    const loadingEllipsis2 = document.createElement('div');
+    const loadingEllipsis3 = document.createElement('div');
 
-    loadingMessage.appendChild(loadingElipsis1);
-    loadingMessage.appendChild(loadingElipsis2);
-    loadingMessage.appendChild(loadingElipsis3);
+    loadingMessage.appendChild(loadingEllipsis1);
+    loadingMessage.appendChild(loadingEllipsis2);
+    loadingMessage.appendChild(loadingEllipsis3);
 
     loadingMessage.classList.add('loading-message');
-    loadingElipsis1.classList.add('elipsis');
-    loadingElipsis2.classList.add('elipsis');
-    loadingElipsis3.classList.add('elipsis');
+    loadingEllipsis1.classList.add('ellipsis');
+    loadingEllipsis2.classList.add('ellipsis');
+    loadingEllipsis3.classList.add('ellipsis');
 
     chatBody.appendChild(loadingMessage);
     chatBody.scrollTop = chatBody.scrollHeight;
 
     function animateEllipsis() {
-        loadingElipsis1.classList.add('elipsis-0');
+        loadingEllipsis1.classList.add('ellipsis-0');
         setTimeout(() => {
-            loadingElipsis1.classList.remove('elipsis-0');
-            loadingElipsis2.classList.add('elipsis-0');
+            loadingEllipsis1.classList.remove('ellipsis-0');
+            loadingEllipsis2.classList.add('ellipsis-0');
             setTimeout(() => {
-                loadingElipsis2.classList.remove('elipsis-0');
-                loadingElipsis3.classList.add('elipsis-0');
+                loadingEllipsis2.classList.remove('ellipsis-0');
+                loadingEllipsis3.classList.add('ellipsis-0');
                 setTimeout(() => {
-                    loadingElipsis3.classList.remove('elipsis-0');
+                    loadingEllipsis3.classList.remove('ellipsis-0');
                     setTimeout(() => {
                         chatBody.removeChild(loadingMessage);
                         callback();
