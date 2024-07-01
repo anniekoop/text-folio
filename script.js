@@ -15,7 +15,7 @@ function displayCurrentTime() {
     if (hours === 0) {
         timeDisplay.innerText = `12:${minutes} AM`;
     } else if (hours < 12) {
-        timeDisplay.innerText = `${hours}:${minutes} AM`;
+        timeDisplay.innerText = `${hours + 7}:${minutes} AM`;
     } else if (hours === 12) {
         timeDisplay.innerText = `12:${minutes} PM`;
     } else {
